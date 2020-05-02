@@ -1,0 +1,39 @@
+/* Body */
+
+body{
+    background-color:rgb(255, 255, 255);
+}
+
+.jumbotron-fluid{
+    background-color: darkblue;
+    text-align: center;
+    color: white;
+    border-bottom: solid 2px black;
+}
+
+.container{
+    margin-bottom: 20px;
+}
+
+.card-header{
+    font-weight: bolder;
+    padding: 10px;
+}
+
+.form-group{
+    margin:10px;
+}
+
+
+/* Footer */
+footer{
+    text-align: center;
+    background-color:darkblue;
+    color:rgb(0, 0, 0);
+    border-top: solid 2px black;
+    padding-top: 18px;
+    padding-bottom: 12px;
+    font-size: smaller;
+    position: absolute;
+    width: 100%;
+}
