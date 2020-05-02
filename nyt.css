@@ -24,6 +24,10 @@ body{
     margin:10px;
 }
 
+.btn .btn-light{
+    margin:20px;
+}
+
 
 /* Footer */
 footer{
