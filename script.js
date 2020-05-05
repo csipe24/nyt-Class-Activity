@@ -9,34 +9,42 @@ var query = '?q='
 var numberRecords = $('#numberRecords');
 
 
+//when search term is submitted, run search based on user parameters
+//$("#searchTerm").on("click", function(e) {
+    $('#search').on('click', function(event){ 
         
-$('#submit').on(submit, function(e) {
-    event.preventDefault();
+        
+        
+      
+    //event.preventDefault();
     var numberRecords = $('#numberRecords').text();
-    var searchTerm = $('#searchTerm').text();
+    var searchTerm = $('#searchTerm' ).val();
     var startYear = $('#startYear').text();
     var enddYear = $('#endYear').text();
-
-    console.log(startYear);
+    
+    console.log(searchTerm)
+   
    // Fully constructed URL based on search
     var fullURL = queryURL + query + searchTerm + apiKey;
 
-    if ( startYear ) {
+    console.log(fullURL)
+    // if ( startYear != null ) {
 
-        fullURL = fullURL + "&begin_date="  + startYear + "0101";
+    //     fullURL = fullURL + "&begin_date="  + startYear + "0101";
 
-    }
+    // }
 
     $.ajax({
-        url: queryURL,
+        url: fullURL,
         method: "GET"
     }).then(function( response ) {
         
         console.log( response )
-    }
+    })
 
-    $( '' )
+   // $( '' )
     
 
-    queryURL + query + apiKey
-}
+   // queryURL + query + apiKey
+});
+
