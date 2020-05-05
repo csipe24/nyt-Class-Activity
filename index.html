@@ -42,18 +42,52 @@
           </select>
         </div>
 
-        <div class="form-group">
-            <label for="exampleInputPassword1">Start Year (Optional):</label>
-            <input type="text" class="form-control" id="startYear">
-          </div>
-
-        <div class="form-group">
-          <label for="exampleInputPassword1">End Year (Optional):</label>
-          <input type="text" class="form-control" id="endYear">
-        </div>
+        
+          <!-- Drop down form for date format-->
+              <div class="form-row align-items-center">
+                <div class="col-auto my-1">
+                  <label class="mr-sm-2 sr-only">Start Year</label>
+                  <select class=" custom-select mr-sm-2" id="start-year">
+                    <option selected>Choose...</option>
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                    <option value="2017">2017</option>
+                    <option value="2016">2016</option>
+                    <option value="2015">2015</option>
+                    <option value="2014">2014</option>
+                    <option value="2013">2013</option>
+                    <option value="2012">2012</option>
+                    <option value="2011">2011</option>
+                    <option value="2010">2010</option>
+                    <option value="2009">2009</option>
+                    <option value="2008">2008</option>
+                  </select>
+                </div>
+                <div class="form-row align-items-center">
+                  <div class="col-auto my-1">
+                    <label class="mr-sm-2 sr-only">End Year</label>
+                    <select class="custom-select mr-sm-2" id="end-year">
+                      <option selected>Choose...</option>
+                      <option value="2020">2020</option>
+                      <option value="2019">2019</option>
+                      <option value="2018">2018</option>
+                      <option value="2017">2017</option>
+                      <option value="2016">2016</option>
+                      <option value="2015">2015</option>
+                      <option value="2014">2014</option>
+                      <option value="2013">2013</option>
+                      <option value="2012">2012</option>
+                      <option value="2011">2011</option>
+                      <option value="2010">2010</option>
+                      <option value="2009">2009</option>
+                      <option value="2008">2008</option>
+                    </select>
+                  </div>
+               
       </form>
 
-      <div class="container">
+      <div class="submitContainer">
         <button type="submit" id="search" class="btn btn-light"><i class="fas fa-search"></i> Submit</button>
         <button type="submit" id="clear" class="btn btn-light"><i class="fas fa-trash"></i> Clear Results</button>
       </div>
@@ -62,7 +96,7 @@
 </div>
 </div>
 
-<div class="container">
+<div class="cardContainer">
 <div class="card">
     <div class="card-header"><i class="fas fa-table"></i> Top Articles
     </div>
@@ -81,3 +115,6 @@
 <footer>
    <p>New York Times Search - Made by Group 5</p>
 </footer>
+
+</html>
+
